@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 
+import FeaturedMovie from "./components/FeaturedMovie/FeaturedMovie";
 import GlobalStyle from "./GlobalStyle";
 import DarkTheme from "./themes/dark";
 import LightTheme from "./themes/light";
@@ -17,7 +18,7 @@ function App() {
   return (
     <ThemeProvider theme={currentTheme}>
       <GlobalStyle />
-      <h1>Teste</h1>
+      <FeaturedMovie />
     </ThemeProvider>
   );
 }
