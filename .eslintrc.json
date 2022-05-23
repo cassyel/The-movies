@@ -26,6 +26,7 @@
     "prettier"
   ],
   "rules": {
+    "semi": "error",
     "camelcase": "off",
     "import/no-unresolved": "error",
     "@typescript-eslint/naming-convention": [
