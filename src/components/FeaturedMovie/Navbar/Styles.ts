@@ -4,15 +4,25 @@ import { FlexContainer } from "../Styles";
 
 export const Navbar = styled(FlexContainer)`
   height: 100%;
-  flex-direction: column;
   width: 60px;
+  flex-direction: column;
+  margin: 5px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: row;
+    height: 50px;
+    :nth-child(1) {
+      margin-top: 5px;
+    }
+  }
 `;
 
 export const Button = styled.button`
   background-color: transparent;
   margin: 20px 0;
   cursor: pointer;
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +33,12 @@ export const Button = styled.button`
     height: 26px;
   }
 
-  :first-child {
-    margin: 40px 0 64px 0;
+  :hover {
+    background-color: ${(props) => props.theme.colors.secundary};
+  }
+
+  @media (max-width: 768px) {
+    margin: 0;
+    height: 30px;
   }
 `;

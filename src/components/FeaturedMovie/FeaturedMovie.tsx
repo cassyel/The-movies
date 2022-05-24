@@ -7,7 +7,7 @@ function FeaturedMovie() {
   return (
     <FeatureSection>
       <NavbarComponent />
-      <div>FeaturedMovie</div>
+      <div style={{ width: "100%", height: "350px" }}>FeaturedMovie</div>
     </FeatureSection>
   );
 }

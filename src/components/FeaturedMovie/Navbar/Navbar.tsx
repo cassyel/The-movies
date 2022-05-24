@@ -13,9 +13,6 @@ function NavbarComponent() {
         <img src={Home} alt="Home Icon" />
       </Button>
       <Button type="button">
-        <img src={Home} alt="Home Icon" />
-      </Button>
-      <Button type="button">
         <img src={Movies} alt="Movie Icon" />
       </Button>
       <Button type="button">
