@@ -21,7 +21,8 @@ export const Details = styled.div`
   width: 30%;
   height: 50%;
   margin: 0 0 0 50px;
-  background-color: green;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
   text-align: left;
 
   @media (max-width: 768px) {
@@ -41,6 +42,7 @@ export const Type = styled.p`
 `;
 
 export const Star = styled.div`
+  margin: 10px;
   position: relative;
 
   display: inline-block;
@@ -79,4 +81,26 @@ export const Star = styled.div`
   :after {
     transform: rotate(35deg);
   }
+`;
+
+export const Title = styled.h1`
+  color: ${(props) => props.theme.colors.text};
+  margin: 10px 0;
+`;
+
+export const Preview = styled.p`
+  color: ${(props) => props.theme.colors.text};
+  margin: 10px 0;
+`;
+
+export const ViewMovie = styled.button`
+  width: fit-content;
+  padding: 10px 20px;
+  color: ${(props) => props.theme.colors.text};
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 16px;
 `;
