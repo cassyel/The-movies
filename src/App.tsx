@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 
 import FeaturedMovie from "./components/FeaturedMovie/FeaturedMovie";
+import { MovieContextProvider } from "./contexts/MovieContext";
 import GlobalStyle from "./GlobalStyle";
 import DarkTheme from "./themes/dark";
 import LightTheme from "./themes/light";
@@ -17,8 +18,10 @@ function App() {
 
   return (
     <ThemeProvider theme={currentTheme}>
-      <GlobalStyle />
-      <FeaturedMovie />
+      <MovieContextProvider>
+        <GlobalStyle />
+        <FeaturedMovie />
+      </MovieContextProvider>
     </ThemeProvider>
   );
 }
