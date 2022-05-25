@@ -12,6 +12,7 @@ export const Navbar = styled(FlexContainer)`
     width: 100%;
     flex-direction: row;
     height: 50px;
+    margin: 0;
     :nth-child(1) {
       margin-top: 5px;
     }
